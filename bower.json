@@ -1,0 +1,21 @@
+{
+  "name": "es6mods",
+  "version": "0.0.0",
+  "authors": [
+    "Sebastian Wilzbach <greeenify@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "~1.0.5",
+    "systemjs": "https://github.com/systemjs/systemjs.git#0.18.4",
+    "plugin-css": "systemjs/plugin-css#~0.1.13",
+    "plugin-text": "systemjs/plugin-text#~0.0.2"
+  }
+}

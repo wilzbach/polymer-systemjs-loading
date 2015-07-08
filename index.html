@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Polymer and ES6 Modules</title>
+    <script src="./bower_components/systemjs/dist/system.js"></script>
+	<!-- polyfill - only needed in legacy browsers -->
+	<script src="./bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
+</head>
+
+<body>
+	<div class="hello">Loading a web component with SystemJS</div>
+
+	<bio-element>element</bio-element>
+
+    <script>
+        System.config({
+            baseURL: '/',
+            map: {
+                text: './bower_components/plugin-text/text.js',
+                css: './bower_components/plugin-css/css.js',
+                polymer: './polymer.js'
+            }
+        });
+		System.import("element.js");
+    </script>
+
+</body>
+
+</html>
